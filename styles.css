@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    /* Primary */
+
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    /* Neutral */
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-blue);
+    font-family: 'Manrope', sans-serif;
+
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: var( --dark-grayish-blue);
+    max-width: 400px;
+    max-height: auto;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+.title{
+ color: var(--neon-green);
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ font-size: 14px;
+ padding-bottom: 15px;
+}
+#advice-text{
+    color: var(--light-cyan);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    margin-bottom: 22px;
+}
+.divider-desktop{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 25px;
+}
+.dice-btn{
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translateX(-50%);
+    background: var(--neon-green);
+    padding: 11px 13px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.dice-btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 0px 18px hsl(150, 89%, 79%);
+}
